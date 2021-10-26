@@ -10,17 +10,17 @@ def read(fname):
 readme = 'README'
 
 distutils.core.setup(
-    name='ad',
+    name='adce',
     version='1.3.2',
-    author='Abraham Lee',
-    author_email='tisimst@gmail.com',
-    description='Fast, transparent first- and second-order automatic differentiation',
-    url='http://pythonhosted.org/ad',
+    author='Edward Burnell',
+    author_email='nburnell@gmail.com',
+    description='Fast, transparent first- and second-order automatic differentiation; loving fork of ad by Abraham Lee / tisimst@gmail.com',
+    url='http://pythonhosted.org/adce',
     license='BSD License',
     long_description=read(readme),
     package_data={'': [readme]},
     #include_package_data=True,
-    packages=['ad', 'ad.admath', 'ad.linalg'],
+    packages=['adce', 'adce.admath', 'adce.linalg'],
     keywords=[
         'automatic differentiation',
         'first order',
