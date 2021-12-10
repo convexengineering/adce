@@ -13,7 +13,7 @@ A. Is X from the ADF class or subclass?
 
 Examples:
 
-  from admath import sin
+  from adcemath import sin
   
   # Manipulation of numbers that track derivatives:
   x = ad.adnumber(3)
@@ -27,7 +27,7 @@ is possible.  This is encouraged when using a Python shell as a
 calculator.  Example:
 
   import ad
-  from ad.admath import *  # Imports tan(), etc.
+  from adce.admath import *  # Imports tan(), etc.
   
   x = ad.adnumber(3)
   print tan(x)  # tan() is the ad.admath.tan function
@@ -46,7 +46,7 @@ author.
 from __future__ import division
 import math
 import cmath
-from ad import __author__, ADF, to_auto_diff, _apply_chain_rule
+from adce import __author__, ADF, to_auto_diff, _apply_chain_rule
 
 try:
     import numpy as np

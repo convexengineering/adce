@@ -31,8 +31,8 @@ calculations with **automatic differentation** can be performed
 **transparently** (i.e., through the usual syntax for mathematical 
 formulas):
 
->>> from ad import adnumber
->>> from ad.admath import *  # sin(), etc.
+>>> from adce import adnumber
+>>> from adce.admath import *  # sin(), etc.
 >>> x = adnumber(1)
 >>> print 2*x
 ad(2)

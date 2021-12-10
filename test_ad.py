@@ -8,8 +8,8 @@ Copyright: 2013
 
 """
 import ad
-from ad import *
-from ad.admath import *
+from adce import *
+from adce.admath import *
 import math
 import cmath
 import unittest

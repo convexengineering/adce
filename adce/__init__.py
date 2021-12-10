@@ -937,7 +937,7 @@ def adnumber(x, tag=None):
     Creating an AD object (any numeric type can be input--int, float, complex,
     etc.)::
 
-        >>> from ad import adnumber
+        >>> from adce import adnumber
         >>> x = adnumber(2)
         >>> x
         ad(2.0)
@@ -975,7 +975,7 @@ def adnumber(x, tag=None):
 
     We can also use the exponential, logarithm, and trigonometric functions::
 
-        >>> from ad.admath import *  # sin, exp, etc. math funcs
+        >>> from adce.admath import *  # sin, exp, etc. math funcs
         >>> z = sqrt(x)*sin(erf(y)/3)
         >>> z
         ad(0.24413683610889056)
@@ -1189,7 +1189,7 @@ if numpy_installed:
         array(6.0, dtype=object)
 
         >>> import numpy as np
-        >>> from ad.admath import exp
+        >>> from adce.admath import exp
         >>> x = adnumber(np.linspace(0,2,5))
         >>> y = x**2
         >>> d(y, x)

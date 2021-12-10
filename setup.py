@@ -11,7 +11,7 @@ readme = 'README'
 
 distutils.core.setup(
     name='adce',
-    version='1.3.3',
+    version='1.3.3.2',
     author='Edward Burnell',
     author_email='nburnell@gmail.com',
     description='Fast, transparent first- and second-order automatic differentiation; loving fork of ad by Abraham Lee / tisimst@gmail.com',

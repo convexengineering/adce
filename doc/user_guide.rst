@@ -12,7 +12,7 @@ Basic setup
 Basic mathematical operations involving numbers that track derivatives
 only require a simple import:
 
->>> from ad import adnumber
+>>> from adce import adnumber
 
 The :func:`adnumber` function creates numbers with derivative tracing
 capabilities. Existing calculation code can usually run with no or 
@@ -111,7 +111,7 @@ provides generalizations of **most of the functions from the standard**
 :mod:`math` **and** :mod:`cmath` **modules**.  
 These mathematical functions are found in the :mod:`ad.admath` module:
 
->>> from ad.admath import *  # Imports sin(), etc.
+>>> from adce.admath import *  # Imports sin(), etc.
 >>> sin(x**2)
 ad(-0.7568024953079282)
 
@@ -210,7 +210,7 @@ The **jacobian matrix** can be easily created for multiple dependent objects,
 where each row is the gradient of the dependent variables with respect to
 each of the independent variables, *in the order specified*:
 
->>> from ad import jacobian
+>>> from adce import jacobian
 >>> jacobian([square, sum_value], [x, u, v])
 [[4.0, 0.0, 0.0], [0.0, -626.9999999999999, 20.0]]
 
@@ -263,7 +263,7 @@ those in the `scipy.optimize`_ submodule. With this package, a function
 can be conveniently wrapped with functions that return both the gradient
 and hessian:
 
->>> from ad import gh  # the gradient and hessian functions generator
+>>> from adce import gh  # the gradient and hessian functions generator
 >>> def my_cool_function(x):
 ...     return (x[0] - 10.0)**2 + (x[1] + 5.0)**2
 >>> my_cool_gradient, my_cool_hessian = gh(my_cool_function)
